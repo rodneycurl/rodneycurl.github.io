@@ -1,9 +1,36 @@
+* {
+  margin: 0;
+  border: 0;
+}
+
 h1 {
   font-style: normal;
   font-family: sans-serif;
+  margin: 30px;
 }
 
-link {
+h2 {
   font-style: normal;
   font-family: sans-serif;
+  margin: 30px;
+}
+
+p {
+  font-style: normal;
+  font-family: sans-serif;
+  margin: 30px;
+}
+
+
+nav, footer {
+  font-style: normal;
+  font-family: sans-serif;
+  text-decoration: none;
+  margin:30px;
+}
+
+div.hero {
+  background-size: cover;
+  height: 300px;
+  background-color: black;
 }
