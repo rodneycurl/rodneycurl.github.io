@@ -9,11 +9,15 @@ a {
   border-bottom: 1px solid transparent;
 }
 
-/*a:-webkit-any-link {
-  color: -webkit-link;
-  text-decoration: underline;
+a:-webkit-any-link {
+  /*color: -webkit-link;*/
+  /*text-decoration: underline;*/
   cursor: auto;
-}*/
+}
+
+a:hover {
+  border-bottom: 1px solid lime
+}
 
 h1 {
   font-style: normal;
@@ -64,6 +68,17 @@ li {
 
 div {
   display: block;
+}
+
+/*img {
+  background-size: cover;
+}*/
+
+#portrait-container img {
+  background-size: cover;
+  float: left;
+  width: 30%;
+  margin: 50px 0px 0px 150px;
 }
 
 #extra-stuff>div {
