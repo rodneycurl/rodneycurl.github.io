@@ -7,6 +7,7 @@ a {
   text-decoration: none;
   color: rgb(66,63,63);
   border-bottom: 1px solid transparent;
+  /*display:inline-block;*/
 }
 
 a:-webkit-any-link {
@@ -66,6 +67,20 @@ li {
   text-align: -webkit-match-parent;
 }
 
+ul {
+  margin: auto;
+}
+
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 10px;
+}
+
 div {
   display: block;
 }
@@ -97,12 +112,6 @@ div {
   list-style-type: none;
 }
 
-/*p {
-  font-style: normal;
-  font-family: sans-serif;
-  margin: 30px;
-}*/
-
 header {
   width: 75%;
   margin:50px auto 50px;
@@ -111,6 +120,21 @@ header {
 #home, header {
   min-width: 400px;
   display: block;
+}
+
+/*article, aside, footer, header, hgroup, main, nav, section {
+  display: block;
+}*/
+
+#case-study {
+    display: block;
+    margin:0 auto;
+    overflow: hidden;
+    width: 100%;
+}
+
+img.case-study-thumb {
+
 }
 
 nav, footer {
@@ -130,7 +154,7 @@ html, body {
 
 div.hero {
   background-size: cover;
-  height: 500px;
+  height: 600px;
   width: auto;
   margin: 0 auto;
   background-color: lime;
@@ -177,3 +201,8 @@ a, a:visited {
   color: rgb(66,63,63);
   transition: all 250ms;
 }
+/*
+ul#press-list {
+  margin: 0;
+  border: 0;
+}*/
