@@ -136,6 +136,12 @@ div.hero {
   background-color: lime;
 }
 
+div.hero:hover {
+  background-color: indigo;
+  /*-webkit-animation: bounce 1s;
+  animation: bounce 1s;*/
+}
+
 .left {
   float: left;
 }
