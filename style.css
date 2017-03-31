@@ -92,8 +92,7 @@ div {
 #portrait-container img {
   background-size: cover;
   float: left;
-  width: 30%;
-  margin: 50px 0px 0px 150px;
+  margin: 50px 0px 50px 150px;
 }
 
 #extra-stuff>div {
@@ -157,7 +156,7 @@ div.hero {
   height: 1px;
   width: auto;
   margin: 0 auto;
-  background-color: lime;
+  background-color: #D3D3D3;
 }
 
 div.hero:hover {
