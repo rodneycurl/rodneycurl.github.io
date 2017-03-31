@@ -113,11 +113,13 @@ html, body {
   height: 100%;
 }
 
-/*div.hero {
+div.hero {
   background-size: cover;
-  height: 400px;
-  background-color: black;
-}*/
+  height: 500px;
+  width: auto;
+  margin: 0 auto;
+  background-color: lime;
+}
 
 .left {
   float: left;
