@@ -85,9 +85,9 @@ div {
   display: block;
 }
 
-/*img {
-  background-size: cover;
-}*/
+img {
+  display: block;
+}
 
 #portrait-container img {
   background-size: cover;
@@ -130,6 +130,14 @@ header {
     margin:0 auto;
     overflow: hidden;
     width: 100%;
+}
+
+img#image:hover {
+  opacity: 0.5;
+}
+
+.background{
+  background-color: black;
 }
 
 img.case-study-thumb {
@@ -184,13 +192,13 @@ div.project-1 {
   margin: 40px 100px 40px 40px;
 }
 
-img#image {
+/*img#image {
   margin: 0;
   background-repeat: no-repeat;
   background-size: cover;
   background-position:center center;
-  /*max-height: 300px;*/
-}
+  max-height: 300px;
+}*/
 
 div.project-2 {
   margin: 40px 40px 40px 40px;
