@@ -140,10 +140,6 @@ img#image:hover {
   background-color: black;
 }
 
-img.case-study-thumb {
-
-}
-
 nav, footer {
   font-style: normal;
   font-family: "Karla", sans-serif;
@@ -202,6 +198,11 @@ div.project-1 {
 
 div.project-2 {
   margin: 40px 40px 40px 40px;
+}
+
+div.background {
+  /*width: 50%;
+  float: left;*/
 }
 
 .left {
