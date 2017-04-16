@@ -19,6 +19,7 @@ a:-webkit-any-link {
   float: left;
   width: 33.33%;
   opacity: 0;
+  background-color: black;
 }
 
 .grid {
@@ -114,6 +115,11 @@ div {
 img {
   display: block;
 }
+
+img:hover{
+  opacity: 0.5;
+}
+
 
 #portrait-container img {
   background-size: cover;
