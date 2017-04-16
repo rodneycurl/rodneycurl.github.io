@@ -15,9 +15,36 @@ a:-webkit-any-link {
   /*text-decoration: underline;*/
   cursor: auto;
 }
+.grid-sizer,
+.grid-item {
+  float: left;
+  width: 33.33%;
+  opacity: 0;
+}
 
+.grid {
+  max-width: 100%;
+  width: 100% !important;
+}
+/* clearfix */
+.grid:after {
+  conten`t: '';
+  display: block;
+  clear: both;
+}
+.col-md-6{
+  padding:0px !important;
+}
+.img-responsive{
+  width: 100%;
+  height: auto;
+  display:block;
+}
+
+/*RODNEY'S ORIGINAL CSS*/
 a:hover {
-  border-bottom: 1px solid lime
+  border-bottom: 1px solid lime;
+  text-decoration: none;
 }
 
 h1 {
@@ -47,6 +74,7 @@ h4 {
   margin-top: 0;
   color: gray;
   font-weight: lighter;
+  font-size: 16px;
   display: block;
   -webkit-margin-before: 0px;
   -webkit-margin-after: 1.33em;
@@ -104,7 +132,7 @@ img {
   overflow-y: hidden;
   width: 80%;
   display: block;
-  margin: 200px auto 0;
+  margin: 24px auto 0;
 }
 
 #extra-stuff li {
@@ -116,14 +144,35 @@ header {
   margin:50px auto 50px;
 }
 
+.project-details {
+  color: rgba(255,255,255,1);
+  /*background: black;*/
+  opacity: 0.9;
+  filter: alpha(opacity=50);
+  padding: 40px 0px 0px 40px;
+  line-height: 16px;
+  /*text-align: center;*/
+  position: absolute;
+  margin: 0 0 0 0px;
+  width: 80px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+#home {
+  margin: 0;
+  width: 100%;
+}
+
 #home, header {
   min-width: 400px;
   display: block;
 }
 
-/*article, aside, footer, header, hgroup, main, nav, section {
+article, aside, footer, header, hgroup, main, nav, section {
   display: block;
-}*/
+}
 
 #case-study {
     display: block;
@@ -165,8 +214,8 @@ div.hero {
 
 div.hero:hover {
   background-color: indigo;
-  /*-webkit-animation: bounce 1s;
-  animation: bounce 1s;*/
+  -webkit-animation: bounce 1s;
+  animation: bounce 1s;
 }
 
 div.hero-ii {
@@ -180,8 +229,8 @@ div.hero-ii {
 
 div.hero-ii:hover {
   background-color: red;
-  /*-webkit-animation: bounce 1s;
-  animation: bounce 1s;*/
+  -webkit-animation: bounce 1s;
+  animation: bounce 1s;
 }
 
 div.project-1 {
@@ -201,8 +250,14 @@ div.project-2 {
 }
 
 div.background {
-  /*width: 50%;
-  float: left;*/
+  vertical-align: middle;
+  width: 50%;
+  float: left;
+}
+
+#home, header {
+  min-width: 40px;
+  display: block;
 }
 
 .left {
@@ -226,11 +281,11 @@ element.style {
   top: 0px;
 }
 
-.blog-index-wrapper {
+/*.blog-index-wrapper {
   display: inline-block;
   width: 50%;
   float: left;
-}
+}*/
 
 a.blog-index-wrapper {
   border: none;
@@ -241,8 +296,7 @@ a, a:visited {
   transition: all 250ms;
 }
 
-/*
 ul#press-list {
   margin: 0;
   border: 0;
-}*/
+}

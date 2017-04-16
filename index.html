@@ -7,7 +7,7 @@
     <!-- "&shy;" -->
     <script type="text/javascript" async="" data-rocketsrc="http://www.google-analytics.com/ga.js" data-rocketoptimized="true"></script>
     <meta name="Keywords" content="Rodney Curl, R. Curl, Rodney, Curl, Rod Curl, brand marketing manager, brand marketer, marketing, entertainment marketing, entertainment marketing manager, entertainment marketer, developer, brand director, nike, jordan brand, nsw, nike sportswear">
-    <meta name="Description" content="Brand Marketing Manager">
+    <meta name="Description" content="I am a product-driven, brand marketing manager with the keen ability to add value to businesses. As a growth-oriented marketer, my goal is to be the Michael Jordan of my team and lead clients to victory. I champion myself on developing powerful products, growing brands, and delivering a great return on investment.">
     <meta name="abstract" content="Brand Marketing Manager">
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="Content-Language" content="EN">
@@ -15,7 +15,14 @@
     <meta name="distribution" content="Global">
     <meta name="revisit-after" content="1 days">
     <meta http-equiv="imagetoolbar" content="false">
-    <title>Rodney Curl — Brand Marketing Manager</title>
+    <title>Rodney Curl — Creative Technologist</title>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+
     <link href ="https://fonts.googleapis.com/css?family=Karla:400,400italic,700" rel="stylesheet" type="text/css">
     <!-- <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
     <link rel="shortcut icon" type="image/png" href="http://eg.com/favicon.png"/> -->
@@ -25,6 +32,44 @@
   </head>
 
   <body data-gr-c-s-loaded="true">
+    <script>
+
+    jQuery(document).ready(function(){
+
+        // Init Masonry
+        var opts = {
+            itemSelector: '.grid-item',
+            columnWidth: '.grid-item',
+            gutter: 0,
+            percentPosition: true,
+            transitionDuration: '0.8s'
+        }
+        var $grid = jQuery('.grid').masonry(opts);
+
+        // Position and show image as it loads
+        jQuery('.grid').imagesLoaded().progress(function(imgLoadData, elem ){
+            jQuery(elem.img).closest('.grid-item').css('opacity', 1);
+            $grid.masonry('layout');
+        });
+
+    });
+        //   $(document).ready(function(){
+        //       // or with jQuery
+        //       var $grid = $('.grid').masonry();
+        //       // initialize Masonry after all images have loaded
+        //       $grid.imagesLoaded().progress( function(){
+        //           console.log('all images are loaded');
+        //           // $grid.masonry('layout');
+        //           $grid.masonry({
+        //             isFitWidth:true,
+        //             gutter: 0,
+        //             itemSelector: '.grid-item'
+        //          });
+        //
+        //       });
+        // });
+
+    </script>
     <header>
       <link rel="stylesheet" type="text/css" href="style.css">
       <link href="https://fonts.googleapis.com/css?family=Karla" rel="style.css">
@@ -33,9 +78,9 @@
     </h1> -->
     <div class="one-third mobile-hide">
       <p>
-        <a href="/">Rodney Curl</a>
+        <a href="#press-list">Rodney Curl</a>
         <br>
-        Brand Marketing Manager
+        Creative Technologist
         <br>
         Washington, DC
       </p>
@@ -58,12 +103,66 @@
       </div>
     </header>
 
-    <!-- <div class="hero"
-    <img src="http://68.media.tumblr.com/cc2b47089a3279d9308bdeaf47ede529/tumblr_inline_omj3qzyfnt1qzlt2o_500.jpg" />
+    <section id="home">
+      <div id="work-list" style ="">
+        <div class="grid">
+          <div class="grid-item">
+            <p class= "project-details">Tinker's World →</p>
+            <a class="" href="https://tinkers-world.herokuapp.com/" title="Tinker's World" style="">
+              <img class="img-responsive" src="images/tinker.gif">
+            </a>
+          </div>
+          <div class="grid-item">
+            <p class= "project-details">Michael Jordan Trivia →</p>
+                <a class="" href="http://rodneycurl.com/flashcards/" title="Michael Jordan Trivia" style="">
+                  <img class="img-responsive" src="images/mj-ii.jpg">
+                </a>
+              </div>
+        <div class="grid-item">
+          <p class= "project-details">Vote Funny →</p>
+              <a class="" href="https://vote-funny.herokuapp.com" title="Vote Funny" style="">
+                <img class="img-responsive" src="images/vf-ii.jpg">
+              </a>
+            </div>
+            <div class="grid-item">
+            <p class= "project-details">Stereo Champions →</p>
+              <a class="" href="http://stereochampions.com" title="Stereo Champions" style="">
+                <img class="img-responsive" src="images/sza-ii.jpg">
+              </a>
+            </div>
+            <div class="grid-item">
+            <p class= "project-details">MyFaceWhen iPhone App →</p>
+              <a class="" href="https://itunes.apple.com/us/app/myfacewhen-animated-gif-text-app/id523825841?mt=8" title="MyFaceWhen App" style="">
+                <img class="img-responsive" src="images/mfw-ii.gif">
+              </a>
+            </div>
+        <div class="grid-item">
+        <p class= "project-details">Georgetown University →</p>
+          <a class="" href="https://www.facebook.com/GeorgetownAthletics/videos/1181662961877566/?hc_ref=SEARCH" title="Georgetown Football" style="">
+            <img class="img-responsive" src="images/gtown.gif">
+          </a>
+        </div>
+        <div class="grid-item">
+          <p class= "project-details">Allen Iverson HOF →</p>
+              <a class="" href="https://www.youtube.com/watch?v=x67RQKknl-g" title="Allen Iverson Hall Of Fame" style="">
+                <img class="img-responsive" src="images/ai.jpg">
+              </a>
+            </div>
+
+        </div>
+      </div>
+
+    <!-- <div class="project-1">
+    <p><strong>PROJECT 1</strong></p>
+    <p><a href="https://rodneycurl.github.io/flashcards/">Do You Know Air Jordan? →</a></p>
+    <p><strong>DESCRIPTION</strong></p>
+    <p>This project features a quiz about the ultimate winner, Michael Jordan. Test out your knowledge to see if you truly do know everything there is to know about Air Jordan himself.</p>
+    <p><strong>TOOLS&nbsp;</strong></p>
+    <p>HTML, CSS, JavaScript</p>
     </div> -->
 
     <!-- PROJECT 1 -->
-    <div class="background">
+    <!-- <div class="background">
     <a href="https://rodneycurl.github.io/flashcards/">
     <img id="image" src="https://cdn-s3.si.com/s3fs-public/images/1988-Michael-Jordan-005806075.jpg" style="width: 100%;" />
     </div>
@@ -75,10 +174,10 @@
     <p>This project features a quiz about the ultimate winner, Michael Jordan. Test out your knowledge to see if you truly do know everything there is to know about Air Jordan himself.</p>
     <p><strong>TOOLS&nbsp;</strong></p>
     <p>HTML, CSS, JavaScript</p>
-    </div>
+    </div> -->
 
     <!-- PROJECT 2 -->
-    <div class="background">
+    <!-- <div class="background">
     <a href="https://tinkers-world.herokuapp.com/">
     <p><img id="image" src="http://i.imgur.com/vPKN2bB.gif" style="width: 100%;" /></p>
     </div>
@@ -90,10 +189,10 @@
     <p>Tinker Hatfield, the legendary shoe designer of Nike has produced some of the most amazing shoe patterns including the Nike Air Max, Air Jordan, and even the Air Yeezy. This site commemorative site will empower Hatfield&rsquo;s fans to keep his ever-growing legacy alive and well.</p>
     <p><strong>TOOLS&nbsp;</strong></p>
     <p>HTML, CSS, Ruby On Rails, Marketing</p>
-    </div>
+    </div> -->
 
     <!-- PROJECT 3 -->
-    <div class="background">
+    <!-- <div class="background">
     <a href="https://www.youtube.com/watch?v=x67RQKknl-g">
     <p><img id="image" src="http://i.imgur.com/5cao8TN.jpg" style="width: 100%;" /></p>
     </div>
@@ -107,10 +206,10 @@
     <p>Reach: 610K+, Clicks: 45K+, Video Views: 82K+, Shares: 1.8K+</p>
     <p><strong>TOOLS&nbsp;</strong></p>
     <p>Photoshop, Bit.ly, Google Analytics, Hootsuite, Marketing</p>
-    </div>
+    </div> -->
 
     <!-- PROJECT 4 -->
-    <div class="background">
+    <!-- <div class="background">
     <a href="https://www.stereochampions.com">
     <p><img id="image" src="http://stereochampions.com/wp-content/uploads/2015/06/Vic-Mensa-Performance-Sweetlife-Festival-Crowd-Surfing-StereoChampions-DC-Sweet-Green-Stereo-Champions-DC.jpg" style="width: 100%;" /></p>
     </div>
@@ -126,7 +225,7 @@
     <p>HTML, CSS, Wordpress, Marketing</p>
     </div>
 
-    <!-- PROJECT 5 -->
+    PROJECT 5
     <div class="background">
     <a href="https://www.facebook.com/GeorgetownAthletics/videos/1181662961877566/?hc_ref=SEARCH">
     <p><img id="image" src="http://i.imgur.com/a2dmMiF.gif" style="width: 100%;" /></p>
@@ -141,10 +240,10 @@
     <p>Reach: 26K+, Video Views: 4.2K+</p>
     <p><strong>TOOLS&nbsp;</strong></p>
     <p>Premiere Pro, Bit.ly, Hootsuite, Marketing</p>
-    </div>
+    </div> -->
 
     <!-- PROJECT 6 -->
-    <div class="background">
+    <!-- <div class="background">
     <a href="https://itunes.apple.com/us/app/myfacewhen-animated-gif-text-app/id523825841?mt=8">
     <p><img id="image" src="http://i.imgur.com/XIlvTEp.gif" style="width: 100%;" /></p>
     </div>
@@ -158,7 +257,7 @@
     <p>Downloads: 250K+, Apple Store Rating: 4.5, Reach: 500+ Countries, Press: Mashable, Vanity Fair, Refinery 29, CW33 News, and more.</p>
     <p><strong>TOOLS&nbsp;</strong></p>
     <p>Premiere Pro, Photoshop, Bit.ly, Hootsuite, Marketing, PR</p>
-    </div>
+    </div> -->
 
   <section id="home">
     <div id="case-study" style="positon:">
@@ -166,8 +265,8 @@
     <!-- <img class="case-study-thumb" src="/images/2016/champion.jpg"> -->
   </a>
 </div>
-<div id="extra-stuff">
-  <div class="left" id="press-list">
+<div id="extra-stuff" class="row">
+  <div class="left col-md-6" id="press-list">
     <h3>Selected Press</h3>
     <h4>These people wrote about my work</h4>
     <ul id="press-list">
@@ -180,17 +279,20 @@
       <li>The Hoya</li>
       <li>WHUR 96.3</li>
     </ul>
-    <h3>Recognition</h3>
-    <h4>Awards and stuff</h4>
+    <h3>Toolkit</h3>
+    <h4>Notable Skills</h4>
     <ul>
-      <li><strong>Addy</strong>, Gold - Online, Micro or Mini Sites"</li>
-      <li><strong>Addy</strong>, Gold - Online, Internet Commercials"</li>
-      <li><strong>Addy</strong>, Gold - Consumer, Regional/National"</li>
-      <li><strong>Addy</strong>, Gold - Photography, Campaign"</li>
-      <li><strong>Addy</strong>, Silver - Online, Mobile Websites"</li>
-      <li><strong>Addy</strong>, Silver - Websites/Online, Campaign"</li>
-      <li><strong>Addy</strong>, Silver - Sound, Sound Design"</li>
-      <li><strong>University of Maryland Hip-Hop Festival</strong>", Panelist"</li>
+      <li>Brand Management</li>
+      <li>Brand Marketing</li>
+      <li>Digital Strategy</li>
+      <li>Content Marketing</li>
+      <li>Social Media Marketing</li>
+      <li>Influencer Marketing</li>
+      <li>Web Development</li>
+      <li>Event Marketing</li>
+      <li>Email Marketing</li>
+      <li>Digital Analytics</li>
+      <li>Creative Suite</li>
     </ul>
     <h3>Inspiration</h3>
     <h4>Products and people that keep me inspired</h4>
@@ -211,7 +313,7 @@
     </ul>
   </div>
 
-  <div class="right">
+  <div class="right col-md-6">
     <h3>Work History</h3>
     <h4>Currently</h4>
     <p style="padding-left:10px">
@@ -225,7 +327,7 @@
     <a href="http://www.generalassemb.ly">General Assembly</a>
   </p>
   <p style="padding-left:20px">
-    <strong>Languages:</strong> HTML, CSS, JavaScript, Ruby on Rails, Swift, Sass
+    <strong>Languages:</strong> HTML, CSS, JavaScript, Ruby on Rails
   </p>
   <br>
   <h4>Previously</h4>
@@ -239,9 +341,9 @@
   </ul>
   </section>
   <br>
-  <div id = "portrait-container">
+  <!-- <div id = "portrait-container">
     <img src="http://68.media.tumblr.com/cc2b47089a3279d9308bdeaf47ede529/tumblr_inline_omj3qzyfnt1qzlt2o_500.jpg" alt="Rodney Curl" style="">
-  </div>
+  </div> -->
     <!-- ABOUT ME
     <p>I am a product-driven, brand marketing manager with the keen ability to add value to businesses. As a growth-oriented marketer, my goal is to be the Michael Jordan of my team and lead clients to victory. I champion myself on developing powerful products, growing brands, and delivering a great return on investment.</p> -->
     <!-- ARROWS → ← ↑ ↓ -->
