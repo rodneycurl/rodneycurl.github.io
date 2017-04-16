@@ -11,10 +11,9 @@ a {
 }
 
 a:-webkit-any-link {
-  /*color: -webkit-link;*/
-  /*text-decoration: underline;*/
   cursor: auto;
 }
+
 .grid-sizer,
 .grid-item {
   float: left;
@@ -41,7 +40,6 @@ a:-webkit-any-link {
   display:block;
 }
 
-/*RODNEY'S ORIGINAL CSS*/
 a:hover {
   border-bottom: 1px solid lime;
   text-decoration: none;
@@ -233,22 +231,6 @@ div.hero-ii:hover {
   animation: bounce 1s;
 }
 
-div.project-1 {
-  margin: 40px 100px 40px 40px;
-}
-
-/*img#image {
-  margin: 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position:center center;
-  max-height: 300px;
-}*/
-
-div.project-2 {
-  margin: 40px 40px 40px 40px;
-}
-
 div.background {
   vertical-align: middle;
   width: 50%;
@@ -280,12 +262,6 @@ element.style {
   left: 0px;
   top: 0px;
 }
-
-/*.blog-index-wrapper {
-  display: inline-block;
-  width: 50%;
-  float: left;
-}*/
 
 a.blog-index-wrapper {
   border: none;
