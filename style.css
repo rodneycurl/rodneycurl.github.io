@@ -42,7 +42,7 @@ a:-webkit-any-link {
 }
 
 a:hover {
-  border-bottom: 1px solid #E2001A;
+  border-bottom: 1px solid #red;
   text-decoration: none;
 }
 
