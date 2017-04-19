@@ -41,6 +41,10 @@ a:-webkit-any-link {
   display:block;
 }
 
+.intro {
+  margin-right: 100px;
+}
+
 a:hover {
   border-bottom: 1px solid #E2001A;
   text-decoration: none;
