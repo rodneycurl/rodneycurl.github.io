@@ -154,6 +154,15 @@ header {
   margin:50px auto 50px;
 }
 
+.media-img {
+  width: 100%;
+  margin: 0 0 0 0px;
+}
+
+.container {
+  margin: 0 440px 0 170px;
+}
+
 .project-details {
   color: rgba(255,255,255,1);
   /*background: black;*/
