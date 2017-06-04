@@ -150,8 +150,9 @@ img:hover{
 }
 
 header {
-  width: 75%;
-  margin:50px auto 50px;
+  width: 100%;
+  margin-top:50px;
+  margin-bottom: 50px;
 }
 
 .media-img {
@@ -160,7 +161,11 @@ header {
 }
 
 .container {
-  margin: 0 440px 0 170px;
+  width: 100%;
+}
+.row {
+  width: 75%;
+  margin: 0 auto 0 auto;
 }
 
 .project-details {
@@ -184,7 +189,7 @@ header {
   width: 100%;
 }
 
-#home, header {
+header {
   min-width: 400px;
   display: block;
 }
@@ -296,4 +301,17 @@ a, a:visited {
 ul#about {
   margin: 0;
   border: 0;
+}
+
+.media-img-hero {
+  width: 60%;
+  height: auto;
+}
+.video {
+  margin: 0 auto;
+  height: auto;
+}
+.img-container {
+  overflow: hidden;
+  max-height: 300px;
 }
