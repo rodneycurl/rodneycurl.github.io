@@ -160,12 +160,12 @@ header {
   margin: 0 0 0 0px;
 }
 
-.container {
-  width: 100%;
+.middle {
+  margin-left:0px;
+  margin-right:600px;
 }
 .row {
-  width: 50%;
-  margin: 0 auto 0 auto;
+  margin: 0 0 0 150px;
 }
 
 .project-details {
