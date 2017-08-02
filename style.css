@@ -185,9 +185,9 @@ header {
 }
 
 .project-tools {
-  color: rgba(255,255,255,1);
+  color: red;
   padding: 40px 0px 0px 40px;
-  line-height: 6px;
+  line-height: 16px;
   position: absolute;
   margin: 0 0 0 0px;
   width: 80px;
