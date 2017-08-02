@@ -90,6 +90,7 @@ p {
   -webkit-margin-before: 1em;
   -webkit-margin-after: 1em;
   -webkit-margin-start: 0px;
+  margin: 0 300px 10px;
   /*-webkit-margin-end: 0px;*/
 }
 
