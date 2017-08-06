@@ -325,3 +325,7 @@ ul#about {
   overflow: hidden;
   max-height: 300px;
 }
+
+.body-content {
+  margin-right: 500px;
+}
