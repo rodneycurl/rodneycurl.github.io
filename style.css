@@ -229,6 +229,15 @@ img#image:hover {
   background-color: black;
 }
 
+.banner {
+  /*background: lime;
+  padding: 20px;*/
+  display: inline;
+  padding: 0.5em 1em;
+  background-color: lime;
+  box-decoration-break: clone;
+}
+
 nav, footer {
   font-style: normal;
   font-family: "Karla", sans-serif;
