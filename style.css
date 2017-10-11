@@ -259,27 +259,6 @@ div.hero {
   background-color: #D3D3D3;
 }
 
-div.hero:hover {
-  background-color: indigo;
-  -webkit-animation: bounce 1s;
-  animation: bounce 1s;
-}
-
-div.hero-ii {
-  background-size: cover;
-  height: 1px;
-  width: auto;
-  margin: 0 auto;
-  background-color: blue;
-  float:inherit;
-}
-
-div.hero-ii:hover {
-  background-color: red;
-  -webkit-animation: bounce 1s;
-  animation: bounce 1s;
-}
-
 div.background {
   vertical-align: middle;
   width: 50%;
