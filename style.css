@@ -306,7 +306,8 @@ ul#about {
 }
 
 .media-img-hero {
-  width: 560px;
+  width: 100%;
+  max-width:560px;
   height: auto;
 }
 .video {
@@ -319,5 +320,5 @@ ul#about {
 }
 
 .body-content {
-  margin-right: 500px;
+  /* margin-right: 500px; */
 }
